@@ -1,0 +1,16 @@
+services:
+  dagster:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    environment:
+      DAGSTER_HOME: /dagster_home
+      PYTHONPATH: /opt/dagster/app
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./dagster_home:/dagster_home
+      - ./data:/opt/dagster/app/data
+    command: dagster dev -m dagster_app -h 0.0.0.0 -p 3000

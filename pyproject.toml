@@ -1,0 +1,20 @@
+[project]
+name = "clientes-inadimplentes"
+version = "0.1.0"
+description = "Pipeline de relatórios financeiros automatizados com Dagster"
+requires-python = ">=3.12"
+dependencies = [
+    "dagster>=1.11.0",
+    "dagster-webserver>=1.11.0",
+    "python-dotenv>=1.0.1",
+    "pandas>=2.2.0",
+    "clickhouse-connect>=0.8.0",
+    "openpyxl>=3.1.5",
+    "holidays>=0.61",
+    "jupyterlab>=4.6.2",
+    "matplotlib>=3.11.1",
+    "pandas-stubs~=3.0.5"
+]
+
+[tool.uv]
+package = false

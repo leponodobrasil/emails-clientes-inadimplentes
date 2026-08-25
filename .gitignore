@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.dagster/
+.env
+.env.local
+.env.production
+.env.*
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+.idea/
+**/.pytest_cache/
+dagster_home/*
+!dagster_home/dagster.yaml
